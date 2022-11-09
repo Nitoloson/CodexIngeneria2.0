@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+    tools:ignore="ExtraText">
+        <ScrollView
+
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                        <!-- TODO: Update blank fragment layout -->
+
+                        /* Pizarro*/
+
+                        <Button
+                            android:id="@+id/button"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FF0000"
+                            android:text="Metodo Pizarro" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TcPiza=((13.548*((LCP**2)/Dmax)**0.77)*60)" />
+                        <EditText
+                            android:id="@+id/valor_LCP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Valor LCP"
+                            android:inputType="numberDecimal"
+                            android:minHeight="48dp" />
+                        <EditText
+                            android:id="@+id/valor_Dmax"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Dmax"
+                            android:inputType="numberDecimal"
+                            android:minHeight="48dp" />
+
+                        <Button
+                            android:id="@+id/boton_resultado_pizarro"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#4CAF50"
+                            android:hint="Resultado" />
+
+                        <TextView
+                            android:id="@+id/Text_Resultado"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TcPizarro=" />
+
+
+                        /* Kirpich */
+
+                        <TextView
+                            android:id="@+id/textView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="_______________________________________________________________" />
+
+                        <Button
+                            android:id="@+id/button2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FF0000"
+                            android:text="Metodo Kirpich" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TcKirpich=((0.870*((LCP**3)/Dmax))**0.385)*60" />
+                        <EditText
+                            android:id="@+id/valor_LCP_Kirpich"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Valor LCP"
+                            android:inputType="numberDecimal"
+                            android:minHeight="48dp" />
+                        <EditText
+                            android:id="@+id/valor_Dmax_Kirpich"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Dmax"
+                            android:inputType="numberDecimal"
+                            android:minHeight="48dp" />
+
+                        <Button
+                            android:id="@+id/boton_resultado_Kirpich"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#4CAF50"
+                            android:hint="Resultado_Kirpich" />
+                        <TextView
+                            android:id="@+id/Text_Resultado_Kirpich"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TcKirpich=" />
+
+                        /* Giandotti */
+                        <TextView
+                            android:id="@+id/textView_Giandotti"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="_______________________________________________________________" />
+
+                        <Button
+                            android:id="@+id/button3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FF0000"
+                            android:text="Metodo Giandotti"
+                            app:strokeColor="#FF0000" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TcGiandotti=((4*A^0.5+1.5*LCP)/(0.8(Em^0.5)))*60" />
+
+                        <EditText
+                            android:id="@+id/valor_LCP_Giandotti"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Valor LCP"
+                            android:inputType="numberDecimal"
+                            android:minHeight="48dp" />
+                        <EditText
+                            android:id="@+id/valor_A_Giandotti"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="A"
+                            android:inputType="numberDecimal"
+                            android:minHeight="48dp" />
+                        <EditText
+                            android:id="@+id/valor_Em_Giandotti"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Em"
+                            android:inputType="numberDecimal"
+                            android:minHeight="48dp" />
+
+                        <Button
+                            android:id="@+id/boton_resultado_Giandotti"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#4CAF50"
+                            android:hint="Resultado_Giandotti" />
+                        <TextView
+                            android:id="@+id/Text_Resultado_Giandotti"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TcGiandotti=" />
+
+
+                        /* Temez*/
+
+                        <TextView
+                            android:id="@+id/textView_Temez"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="_______________________________________________________________" />
+
+                        <Button
+                            android:id="@+id/button4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FF0000"
+                            android:text="Metodo Temez" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TcTemez=(0.126*((LCP)/(Scp^0.35))^0.75)*60)" />
+                        <EditText
+                            android:id="@+id/valor_LCP_Temez"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Valor LCP"
+                            android:inputType="numberDecimal"
+                            android:minHeight="48dp" />
+                        <EditText
+                            android:id="@+id/valor_SCP_Temez"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="SCP"
+                            android:inputType="numberDecimal"
+                            android:minHeight="48dp" />
+
+                        <Button
+                            android:id="@+id/boton_resultado_Temez"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#4CAF50"
+                            android:hint="Resultado_Temez" />
+                        <TextView
+                            android:id="@+id/Text_Resultado_Temez"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TcTemez=" />
+
+
+                        /* SCS*/
+                        <TextView
+                            android:id="@+id/textView_SCS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="_______________________________________________________________" />
+
+                        <Button
+                            android:id="@+id/button6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FF0000"
+                            android:text="Metodo SCs" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TcSCS=(3.9756*((LCP^0.77)/(Scp^0.385)" />
+                        <EditText
+                            android:id="@+id/valor_LCP_SCS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Valor LCP"
+                            android:inputType="numberDecimal"
+                            android:minHeight="48dp" />
+                        <EditText
+                            android:id="@+id/valor_SCP_SCS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="SCP"
+                            android:inputType="numberDecimal"
+                            android:minHeight="48dp" />
+
+                        <Button
+                            android:id="@+id/boton_resultado_SCS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#4CAF50"
+                            android:hint="Resultado_SCS" />
+
+                        <TextView
+                            android:id="@+id/Text_Resultado_SCS"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TcSCS=" />
+
+                        /* Pasini*/
+                        <TextView
+                            android:id="@+id/textView_Pasini"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="_______________________________________________________________" />
+
+                        <Button
+                            android:id="@+id/button5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#FF0000"
+                            android:text="Metodo Pasini" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TcPasini=(0.023*(A*(LCP/Scp))^0.5)*60)" />
+                        <EditText
+                            android:id="@+id/valor_LCP_Pasini"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="Valor LCP"
+                            android:inputType="numberDecimal"
+                            android:minHeight="48dp" />
+                        <EditText
+                            android:id="@+id/valor_A_Pasini"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="A"
+                            android:inputType="numberDecimal"
+                            android:minHeight="48dp" />
+                        <EditText
+                            android:id="@+id/valor_SCP_Pasini"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint="SCP"
+                            android:inputType="numberDecimal"
+                            android:minHeight="48dp" />
+
+                        <Button
+                            android:id="@+id/boton_resultado_Pasini"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="#4CAF50"
+                            android:hint="Resultado_Pasini" />
+                        <TextView
+                            android:id="@+id/Text_Resultado_Pasini"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="TcPasini=" />
+
+
+
+
+                </LinearLayout>
+
+
+        </ScrollView>
+
+
+
+
+
+
+
+
+
+
+
+
+</LinearLayout>
+
